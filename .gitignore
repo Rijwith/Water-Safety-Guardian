@@ -19,7 +19,14 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Generated model artifacts (run models/XGBoost.py and models/ann_water_potability.py to regenerate)
-models/mymodel.pkl
+# Generated ANN artifacts (run models/ann_water_potability.py to regenerate)
 outputs_ann/ann_artifacts.pkl
 outputs_ann/ann_water_potability.keras
+
+# Training-only outputs (not needed for deployment)
+outputs_ann/
+outputs/
+notebooks/
+
+# Large/unnecessary for deployment
+models/ann_water_potability.py
