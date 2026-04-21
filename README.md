@@ -14,27 +14,30 @@ An AI-powered web app that predicts whether water is safe to drink based on 9 ch
 
 ```
 ├── app.py                        # Home page
+├── ui_utils.py                   # Shared UI components & CSS
 ├── pages/
 │   ├── 1_Predict.py              # Water safety prediction page
 │   ├── 2_Insights.py             # Model insights & feature importance
 │   └── 3_About.py                # About the project
-├── ui_utils.py                   # Shared UI components & CSS
-├── XGBoost.py                    # XGBoost training script
-├── ann_water_potability.py       # ANN training script
-├── water_potability_analysis.py  # Exploratory data analysis
-├── dataset.ipynb                 # Jupyter notebook analysis
-├── water_potability.csv          # Dataset (3,276 samples)
-├── mymodel.pkl                   # Trained XGBoost model + artifacts
-├── logo.svg                      # App logo
+├── models/
+│   ├── XGBoost.py                # XGBoost training script
+│   ├── ann_water_potability.py   # ANN training script
+│   └── mymodel.pkl               # Trained XGBoost model + artifacts (generated)
+├── data/
+│   └── water_potability.csv      # Dataset (3,276 samples)
+├── notebooks/
+│   ├── dataset.ipynb             # Jupyter notebook analysis
+│   └── water_potability_analysis.py  # Exploratory data analysis
 ├── outputs_xgb/
 │   ├── xgb_results.json          # XGBoost evaluation results
 │   └── plots/                    # Generated visualisation plots
 ├── outputs_ann/
 │   ├── ann_results.json          # ANN evaluation results
-│   ├── ann_artifacts.pkl         # ANN scaler & threshold
-│   └── ann_water_potability.keras# Trained ANN model
+│   ├── ann_artifacts.pkl         # ANN scaler & threshold (generated)
+│   └── ann_water_potability.keras# Trained ANN model (generated)
 ├── .streamlit/
 │   └── config.toml               # Streamlit theme config
+├── logo.svg                      # App logo
 └── requirements.txt              # Python dependencies
 ```
 
@@ -81,8 +84,8 @@ streamlit run app.py
 
 To retrain the models:
 ```bash
-python XGBoost.py              # Train XGBoost (saves mymodel.pkl)
-python ann_water_potability.py # Train ANN
+python models/XGBoost.py              # Train XGBoost (saves models/mymodel.pkl)
+python models/ann_water_potability.py # Train ANN
 ```
 
 ---

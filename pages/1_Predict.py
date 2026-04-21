@@ -12,8 +12,8 @@ if str(ROOT) not in sys.path:
 from ui_utils import confidence_bar, disclaimer, footer, hero, setup_page
 
 
-MODEL_PATH = ROOT / "mymodel.pkl"
-DATA_PATH  = ROOT / "water_potability.csv"
+MODEL_PATH = ROOT / "models" / "mymodel.pkl"
+DATA_PATH  = ROOT / "data" / "water_potability.csv"
 
 # Each feature: (display name, unit, safe range hint, plain description)
 FEATURE_META = {

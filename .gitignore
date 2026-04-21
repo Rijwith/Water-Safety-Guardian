@@ -18,3 +18,8 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Generated model artifacts (run models/XGBoost.py and models/ann_water_potability.py to regenerate)
+models/mymodel.pkl
+outputs_ann/ann_artifacts.pkl
+outputs_ann/ann_water_potability.keras

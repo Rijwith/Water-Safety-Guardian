@@ -25,7 +25,7 @@ from tensorflow.keras.optimizers import AdamW
 from tensorflow.keras.regularizers import l2
 
 
-DATA_PATH = Path("water_potability.csv")
+DATA_PATH = Path("data/water_potability.csv")
 OUTPUT_DIR = Path("outputs_ann")
 ANN_MODEL_PATH = OUTPUT_DIR / "ann_water_potability.keras"
 ANN_ARTIFACT_PATH = OUTPUT_DIR / "ann_artifacts.pkl"

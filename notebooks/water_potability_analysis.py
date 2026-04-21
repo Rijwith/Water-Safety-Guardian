@@ -29,8 +29,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 
 
-DATA_PATH = Path("water_potability.csv")
-OUTPUT_DIR = Path("outputs")
+ROOT = Path(__file__).resolve().parents[1]
+DATA_PATH = ROOT / "data" / "water_potability.csv"
+OUTPUT_DIR = ROOT / "outputs"
 PLOTS_DIR = OUTPUT_DIR / "plots"
 
 

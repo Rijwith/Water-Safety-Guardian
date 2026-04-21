@@ -20,8 +20,8 @@ from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
 
 
-DATA_PATH = Path("water_potability.csv")
-MODEL_PATH = Path("mymodel.pkl")
+DATA_PATH = Path("data/water_potability.csv")
+MODEL_PATH = Path("models/mymodel.pkl")
 OUTPUT_DIR = Path("outputs_xgb")
 PLOTS_DIR = OUTPUT_DIR / "plots"
 RESULTS_PATH = OUTPUT_DIR / "xgb_results.json"

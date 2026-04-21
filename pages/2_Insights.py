@@ -12,7 +12,7 @@ if str(ROOT) not in sys.path:
 from ui_utils import feature_importance_bars, footer, hero, setup_page
 
 
-MODEL_PATH = ROOT / "mymodel.pkl"
+MODEL_PATH = ROOT / "models" / "mymodel.pkl"
 PLOTS_DIR  = ROOT / "outputs_xgb" / "plots"
 
 FEATURE_PLAIN = {
