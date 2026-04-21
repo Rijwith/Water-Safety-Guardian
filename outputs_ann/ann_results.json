@@ -1,0 +1,90 @@
+{
+  "model": "TensorFlow Keras ANN (v3 \u2014 engineered features + SMOTE + KFold ensemble)",
+  "features": [
+    "ph",
+    "Hardness",
+    "Solids",
+    "Chloramines",
+    "Sulfate",
+    "Conductivity",
+    "Organic_carbon",
+    "Trihalomethanes",
+    "Turbidity",
+    "ph_chloramines",
+    "ph_sulfate",
+    "ph_hardness",
+    "solids_organic",
+    "chloramines_trihalomethanes",
+    "sulfate_hardness_ratio",
+    "conductivity_solids_ratio",
+    "log_solids"
+  ],
+  "n_features": 17,
+  "engineered_features": [
+    "ph_chloramines",
+    "ph_sulfate",
+    "ph_hardness",
+    "solids_organic",
+    "chloramines_trihalomethanes",
+    "sulfate_hardness_ratio",
+    "conductivity_solids_ratio",
+    "log_solids"
+  ],
+  "techniques": [
+    "class-conditional median imputation",
+    "feature engineering (interactions + ratios + log transform)",
+    "RobustScaler",
+    "SMOTE oversampling (per fold)",
+    "5-fold stratified ensemble",
+    "GaussianNoise augmentation",
+    "tanh activation",
+    "L2 regularization",
+    "BatchNormalization",
+    "AdamW optimizer",
+    "EarlyStopping + ReduceLROnPlateau",
+    "ROC threshold tuning"
+  ],
+  "best_threshold": 0.34421688318252563,
+  "accuracy": 0.5350609756097561,
+  "precision": 0.44969199178644764,
+  "recall": 0.85546875,
+  "f1": 0.5895020188425303,
+  "roc_auc": 0.66408203125,
+  "confusion_matrix": [
+    [
+      132,
+      268
+    ],
+    [
+      37,
+      219
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.7810650887573964,
+      "recall": 0.33,
+      "f1-score": 0.46397188049209137,
+      "support": 400.0
+    },
+    "1": {
+      "precision": 0.44969199178644764,
+      "recall": 0.85546875,
+      "f1-score": 0.5895020188425303,
+      "support": 256.0
+    },
+    "accuracy": 0.5350609756097561,
+    "macro avg": {
+      "precision": 0.6153785402719221,
+      "recall": 0.592734375,
+      "f1-score": 0.5267369496673109,
+      "support": 656.0
+    },
+    "weighted avg": {
+      "precision": 0.6517487582321482,
+      "recall": 0.5350609756097561,
+      "f1-score": 0.5129592515556773,
+      "support": 656.0
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "model": "XGBoost",
+  "threshold": 0.48,
+  "accuracy": 0.8031423290203327,
+  "precision": 0.7677053824362606,
+  "recall": 0.6741293532338308,
+  "f1": 0.7178807947019867,
+  "roc_auc": 0.8715137547556336,
+  "confusion_matrix": [
+    [
+      598,
+      82
+    ],
+    [
+      131,
+      271
+    ]
+  ],
+  "features": [
+    "ph",
+    "Hardness",
+    "Solids",
+    "Chloramines",
+    "Sulfate",
+    "Conductivity",
+    "Organic_carbon",
+    "Trihalomethanes",
+    "Turbidity"
+  ]
+}

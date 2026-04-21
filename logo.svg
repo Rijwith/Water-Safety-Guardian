@@ -1,0 +1,39 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dropG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="dropGDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Drop shape -->
+  <path d="M30 6 C30 6 14 26 14 36 C14 45 21 52 30 52 C39 52 46 45 46 36 C46 26 30 6 30 6 Z"
+        fill="url(#dropG)" filter="url(#glow)"/>
+
+  <!-- Drop shine -->
+  <ellipse cx="23" cy="28" rx="3.5" ry="6" fill="white" opacity="0.3" transform="rotate(-15 23 28)"/>
+
+  <!-- Checkmark inside drop -->
+  <path d="M22 36 L28 43 L40 28" stroke="white" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Wordmark: Aqua -->
+  <text x="56" y="34" font-family="Inter,Arial,sans-serif" font-size="22"
+        font-weight="900" fill="#0369a1" letter-spacing="-0.5">Aqua</text>
+
+  <!-- Wordmark: Check -->
+  <text x="103" y="34" font-family="Inter,Arial,sans-serif" font-size="22"
+        font-weight="900" fill="#0891b2" letter-spacing="-0.5">Check</text>
+
+  <!-- Tagline -->
+  <text x="57" y="46" font-family="Inter,Arial,sans-serif" font-size="7.5"
+        font-weight="600" fill="#4a6580" letter-spacing="1.8">WATER SAFETY AI</text>
+</svg>
