@@ -6,7 +6,7 @@ An AI-powered web app that predicts whether water is safe to drink based on 9 ch
 
 ## 🚀 Live App
 
-> Deploy link will appear here after deployment.
+👉 **[https://water-safety-guardian.streamlit.app](https://water-safety-guardian.streamlit.app)**
 
 ---
 
